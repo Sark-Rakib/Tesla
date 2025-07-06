@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin-top: -50px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 54px;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  z-index: 10;
+  border-bottom: 1px solid #e0e0e0;
+  margin-top: -300px;
+}
+
+.nav-logo img {
+ display: flex;
+ height: 120px;
+ width: 120px;
+ font-weight: normal;
+}
+
+
+.nav-links {
+  display: flex;
+  position: relative;
+}
+
+.vehical-button {
+      background: none;
+      border: none;
+      font-weight: normal;
+    }
+.menu-left {
+      display: none;
+      left: 0;
+      background-color: white;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      padding: 20px;
+      z-index: 1000;
+}
+.menu-right{
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin-left: 400px;
+  margin-top: -150px;
+}
+ul {
+   display: flex;
+   flex-direction: column;
+   list-style: none;
+   gap: 10px;
+}
+    .nav-links:hover .menu-left {
+      display: block;
+      display: flex;
+      flex-direction: row;
+      width: 2000px;
+      height: 400px;
+      margin-top: 460px;
+      margin-left: -300px;
+      padding: 50px;
+      gap: 40px;
+      background-color: white;
+      transition: 0.5s;
+    }
+    .img-1 {
+        height: 100px;
+        width: 100px;
+    }
+
+
+.button-e {
+  position: relative;
+}
+.energy-button {
+      background: none;
+      border: none;
+      font-weight: normal;
+    }
+    .menu-left-e {
+      display: none;
+      left: 0;
+      background-color: white;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      padding: 20px;
+      z-index: 1000;
+}
+    .button-e:hover .menu-left-e {
+      display: block;
+      display: flex;
+      flex-direction: row;
+      width: 2000px;
+      height: 400px;
+      margin-top: 420px;
+      margin-left: -300px;
+      padding: 50px;
+      gap: 40px;
+      background-color: white;
+      transition: 0.5s;
+    }
+    .img-2 {
+        height: 100px;
+        width: 100px;
+    }
+    a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: border 0.3s;
+}
+a:hover {
+  border-bottom: 2px solid #000;
+}
+.menu-right-e{
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin-left: 500px;
+  margin-top: -130px;
+}
+
+    .charging-button {
+      background: none;
+      border: none;
+      font-weight: normal;
+    }
+
+
+    .discover-button {
+      background: none;
+      border: none;
+      font-weight: normal;
+    }
+
+
+    .shop-button {
+      background: none;
+      border: none;
+      font-weight: normal;
+    }
+
+.nav-links a {
+  margin-top: 50px;
+  text-decoration: underline;
+  color: #514d4d;
+  font-size: 15px;
+  font-weight: 500;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: border 0.3s;
+  gap: 50px;
+}
+
+.nav-links a:hover {
+  justify-content: space-evenly;
+  color:  #000;
+  font-weight: 540;
+}
+li:hover {
+  text-decoration: underline;
+  transition: 2px solid black 0.03s;
+  padding: 1px; 
+}
+
+.nav-icons span {
+  margin-left: 18px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Common slide styling */
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  animation: fadeSlide 9s infinite;
+  transition: opacity 1s ease-in-out;
+}
+
+/* Slide backgrounds */
+.slide1 {
+  background-image: url('https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Promotional-Carousel-Model-Y-Desktop-US.jpg');
+  animation-delay: 0s;
+}
+.slide2 {
+  background-image: url('https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Promotional-Carousel-Model-3-Desktop-US.jpg');
+  animation-delay: 3s;
+}
+
+
+/* Text overlay */
+.content {
+  text-align: right;
+  padding: 20px 40px;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+/* Animation */
+@keyframes fadeSlide {
+  0%  { opacity: 0; }
+  33%  { opacity: 1; }
+  66%  { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.hero-content h1 {
+  position: relative;
+  z-index: 2; 
+  padding: 20px;
+  margin-top: -920px;
+}
+
+.hero-content p {
+   position: relative;
+  z-index: 2; 
+  padding: 20px;
+  margin-top: 8px;
+  font-size: 18px;
+  color: #e0e0e0;
+}
+
+.hero-buttons-1 {
+   position: relative;
+  z-index: 2; 
+  padding: 20px;
+  margin-top: 350px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+button {
+   position: relative;
+  z-index: 2; 
+  padding: 20px;
+  padding: 12px 30px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #3e6ae1;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: white;
+  color: black;
+}
